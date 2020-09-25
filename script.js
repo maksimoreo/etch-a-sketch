@@ -58,7 +58,7 @@ function onHover(e) {
 
 function updateButtonClick(e) {
     let newSize = parseInt(inputText.value);
-    if (newSize == NaN) return;
+    if (isNaN(newSize)) return;
     if (newSize < 5 || newSize > 100) return;
 
     // Update field
@@ -88,4 +88,4 @@ let firstColor = document.querySelector('#first-color');
 let secondColor = document.querySelector('#second-color');
 
 // Start
-fillField(20, '#ffcc33', '#990066');
+fillField(10, '#ffcc33', '#990066');
