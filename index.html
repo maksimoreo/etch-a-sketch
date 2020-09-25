@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ETCH-A-SKETCH</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id='container'>
+            <div class='box center-inside'>
+                <h2>Etch a Sketch!</h2>
+                <div class='flex margin-bottom'>
+                    <div class='input-text-container'>
+                        <input id='input-text' type='number' placeholder="Enter new grid size...">
+                    </div>
+                    <button id='update-button'>Update</button>
+                </div>
+                <div class="flex">
+                    <label class="text" for="first-color">First color:</label>
+                    <input id="first-color" type="color">
+                    <span class="text">, </span>
+                    <label class="text" for="second-color">Second color:</label>
+                    <input id="second-color" type="color">
+                </div>
+            </div>
+            <div class='box center-inside'>
+                <h2>Field:</h2>
+                <div id='field'>
+
+                </div>
+            </div>
+            <div class="box center-inside">
+                <h2>About</h2>
+                <p class="text">
+                    2020-09-25 maksimoreo
+                    <a href="https://github.com/maksimoreo/etch-a-sketch">GitHub</a>
+                </p>
+            </div>
+        </div>
+        <script src='script.js'></script>
+    </body>
+</html>
